@@ -21,7 +21,7 @@ if (server == undefined) {
     //JP server
     const server1 = http.createServer((req, res) => {
         var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
-        if (ip.substr(0, 7) == "::ffff:") {
+        if (ip && ip.substr(0, 7) == "::ffff:") {
             ip = ip.substr(7)
         }
         const clientIP = `http://${ip}:${8000}${req.url}`;
@@ -68,7 +68,7 @@ if (server == undefined) {
     //GL server
     const server2 = http.createServer((req, res) => {
         var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
-        if (ip.substr(0, 7) == "::ffff:") {
+        if (ip && ip.substr(0, 7) == "::ffff:") {
             ip = ip.substr(7)
         }
         const clientIP = `http://${ip}:${8001}${req.url}`;
