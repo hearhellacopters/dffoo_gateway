@@ -114,11 +114,11 @@ if (server == undefined) {
 
     console.log("\x1b[36mStarting local Server.\x1b[0m");
 
-    server1.listen(8000, () => {
+    server1.listen(8000, "127.0.0.1", () => {
         console.log(`\x1b[36m[JP Server]\x1b[0m running at http://127.0.0.1:${8000}/`);
     });
 
-    server2.listen(8001, () => {
+    server2.listen(8001, "127.0.0.1", () => {
         console.log(`\x1b[36m[GL Server]\x1b[0m running at http://127.0.0.1:${8001}/`);
     });
 
