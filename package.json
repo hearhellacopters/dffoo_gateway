@@ -1,6 +1,6 @@
 {
   "name": "dffoo_gateway",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "DFFOO Gateway Proxy",
   "main": "index.js",
   "scripts": {
