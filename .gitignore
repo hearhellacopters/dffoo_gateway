@@ -1,0 +1,7 @@
+# dependencies
+node_modules/
+# builds
+_tmp/
+dst/
+dffoo_gateway*
+OperaOmnia*
