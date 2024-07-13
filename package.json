@@ -7,9 +7,9 @@
     "start": "node src/index.js",
     "build": "node build:win.js",
     "build:win": "node src/build.win.js",
-    "build:linux": "node src/build.linux.js",
-    "build:macarm": "node src/build.mac.arm.js",
-    "build:macx64": "node src/build.mac.64.js",
+    "build:linux": "pkg . --compress GZip --targets node16-linux-x64 -o dffoo_gateway-linux-x64",
+    "build:mac:arm": "pkg . --compress GZip --targets node18-macos-arm64 -o dffoo_gateway-macos-arm64 && codesign --sign - dffoo_gateway-macos-arm64",
+    "build:mac:x64": "pkg . --compress GZip --targets node18-macos-x64 -o dffoo_gateway-macos-x64 && codesign --sign - dffoo_gateway-macos-x64",
     "note": "echo \"Only build for the machine type you are running. Mac needs to be signed on Mac in order to run on Mac.\""
   },
   "pkg": {
