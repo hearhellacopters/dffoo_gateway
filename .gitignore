@@ -3,5 +3,8 @@ node_modules/
 # builds
 _tmp/
 dst/
+GL/*
+JP/*
+data.zip
 dffoo_gateway*
 OperaOmnia*

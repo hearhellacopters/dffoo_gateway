@@ -36,6 +36,10 @@ function SHA1(msg) {
     return crypto("sha1").update(msg).digest("base64");
 }
 
+function SHA256(msg) {
+    return crypto("sha256").update(msg).digest("base64");
+}
+
 function unzipWithProgressBar(sourceZip, outputLocation, unzipDirectory) {
     try {
         // Check if the file exists
@@ -452,13 +456,13 @@ async function main() {
         const parts = ["/data.zip.001","/data.zip.002"];
         await concat_files(__dirname, parts, __dirname + "/data.zip");
         console.log(`data.zip merge complete!`);
-        console.log(`Cleaning up data.zip parts...`);
-        parts.forEach(file => {
-            //delete file parts to save space.
-            const filePath = __dirname + file;
-            fs.unlinkSync(filePath);
-        });
-        console.log(`Clean up complete!`);
+        //console.log(`Cleaning up data.zip parts...`);
+        //parts.forEach(file => {
+        //    //delete file parts to save space.
+        //    const filePath = __dirname + file;
+        //    fs.unlinkSync(filePath);
+        //});
+        //console.log(`Clean up complete!`);
     };
     await unzipWithProgressBar(__dirname + "/data.zip", __dirname + "/_tmp/", ver);
     console.log("");
@@ -476,13 +480,29 @@ async function main() {
     var url;
     do {
         try {
-            const answer = await ask(`\x1b[36mEnter the new IP address / URL to the offline server (this device is using \x1b[33m${IPAddress}\x1b[0m\x1b[36m).\nFor a local IP addresses, include the port like \x1b[33m127.0.0.1:8000\x1b[0m\x1b[36m.\nFor a public URL, enter AFTER the 'http://'\x1b[m\n\x1b[33m[URL]\x1b[0m: `);
-            if ((answer.length + 15) >= 64 || answer.length <= 0) {
-                console.log(`\x1b[31m[Error]\x1b[0m: Invalid URL length. Must be less than 48 characters.`);
-            } else {
-                const confrim = await promptUser(`\x1b[33mhttp://${answer}/\x1b[m\nIs this correct (Y/N)? `);
+            console.log(`\x1b[36mEnter the new IP address / URL to the offline server (this device's IP address is \x1b[33m${IPAddress}\x1b[0m\x1b[36m).\x1b[0m`);
+            console.log(`\x1b[36mFor local IP addresses, it MUST include http and port like \x1b[33mhttp://${IPAddress}:8000/\x1b[0m\x1b[36m.\x1b[0m`);
+            console.log(`\x1b[36mMax length of 56 characters\x1b[33m`);
+            const answer = await ask(`[URL]\x1b[0m: `);
+            if (answer.length >= 56 || answer.length <= 0) {
+                console.log(`\x1b[31m[Error]\x1b[0m: Invalid URL length. Must be less than 56 characters.`);
+            } else
+            if(!answer.startsWith("http")){
+                console.log(`\x1b[31m[Error]\x1b[0m: MUST start with http.`);
+            } else
+            if(!(answer.startsWith("http://") || answer.startsWith("https://"))){
+                console.log(`\x1b[31m[Error]\x1b[0m: MUST start with https:// or http://.`);
+            } else
+            if(answer.endsWith("//")){
+                console.log(`\x1b[31m[Error]\x1b[0m: MUST end with a slash '/'.`);
+            } else 
+            if(!answer.endsWith("/")){
+                console.log(`\x1b[31m[Error]\x1b[0m: MUST end with a slash '/'.`);
+            }
+            else {
+                const confrim = await promptUser(`\x1b[33m${answer}\x1b[m\nIs this correct (Y/N)? `);
                 if (confrim == "y") {
-                    url = `http://${answer}/`;
+                    url = answer;
                 }
             }
         } catch (error) {
@@ -493,7 +513,7 @@ async function main() {
 
     const lib = new biwriter(database);
 
-    const patch_total = 13;
+    const patch_total = 12;
     var i = 1;
     consoleLoadingBar(patch_total, i++, "Patching");
     lib.goto(CONSTS[ver].base);
@@ -530,15 +550,16 @@ async function main() {
     consoleLoadingBar(patch_total, i++, "Patching");
     const json_edit = await readFileIfExists(__dirname + "/_tmp/Payload/OperaOmnia.app/0000/mst_web_url_data.json", true);
     const json_edit2 = json_edit.toString().replace(/http:\/\/127\.0\.0\.1:8000\//gm, url);
-    const edit_hash = SHA1(json_edit2);
-    const codesig = await readFileIfExists(__dirname + "/_tmp/Payload/OperaOmnia.app/_CodeSignature/CodeResources", true);
-    const codesig_file = codesig.toString().replace(/\*\*\*/gm, edit_hash);
+    //const edit_hash = SHA1(json_edit2);
+    //const edit_hash2 = SHA256(json_edit2);
+    //const codesig = await readFileIfExists(__dirname + "/_tmp/Payload/OperaOmnia.app/_CodeSignature/CodeResources", true);
+    //const codesig_file = codesig.toString().replace(/\*\*\*/gm, edit_hash);
     fs.writeFileSync(__dirname + "/_tmp/Payload/OperaOmnia.app/0000/mst_web_url_data.json", json_edit2);
-    fs.writeFileSync(__dirname + "/_tmp/Payload/OperaOmnia.app/_CodeSignature/CodeResources", codesig_file);
-    consoleLoadingBar(patch_total, i++, "Patching");
-    const root_edit = await readFileIfExists(__dirname + "/_tmp/Payload/OperaOmnia.app/Settings.bundle/Root.plist", true);
-    const root_edit2 = root_edit.toString().replace(/\*\*\*/gm, url);
-    fs.writeFileSync(__dirname + "/_tmp/Payload/OperaOmnia.app/Settings.bundle/Root.plist", root_edit2);
+    //fs.writeFileSync(__dirname + "/_tmp/Payload/OperaOmnia.app/_CodeSignature/CodeResources", codesig_file);
+    //consoleLoadingBar(patch_total, i++, "Patching");
+    //const root_edit = await readFileIfExists(__dirname + "/_tmp/Payload/OperaOmnia.app/Settings.bundle/Root.plist", true);
+    //const root_edit2 = root_edit.toString().replace(/\*\*\*/gm, url);
+    //fs.writeFileSync(__dirname + "/_tmp/Payload/OperaOmnia.app/Settings.bundle/Root.plist", root_edit2);
     consoleLoadingBar(patch_total, i++, "Patching");
     console.log(`\n\x1b[32m[Completed]\x1b[0m: Finished Patching.`);
     console.log(`Creating new .ipa file. Please wait...`);
