@@ -1,11 +1,11 @@
 {
   "name": "dffoo_clients",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "DFFOO Clients & Gateway Proxy",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "build": "node build:win.js",
+    "start": "node index.js",
+    "build": "npm run build:win",
     "build:win": "node src/build.win.js",
     "build:linux": "pkg . --compress GZip --targets node16-linux-x64 -o dffoo_gateway-linux-x64",
     "build:mac:arm": "pkg . --compress GZip --targets node18-macos-arm64 -o dffoo_gateway-macos-arm64 && codesign --sign - dffoo_gateway-macos-arm64",
@@ -23,7 +23,7 @@
     "outputPath": "./"
   },
   "bin": {
-    "app": "src/index.js"
+    "app": "index.js"
   },
   "repository": {
     "type": "git",

@@ -1,13 +1,13 @@
-# Dissidia Final Fantasy Opera Omnia Clients & Gateway + iOS Signer
+# Dissidia Final Fantasy Opera Omnia Clients & Gateway + iOS Signing
 
-## Android
+## For Android
 
-Simple, just download the version you want from the ``/Android`` folder along with the Gateway app. Install both on the device you want (you may have to make sure the device allows apps to be installed from unofficial sources). Run the Gateway app and enter the IP address and port of the device on the same network running the offline server. After entering the IP address and port number, flick the switch on the right and you should get a message saying your gateway is running (Note: While you can enter more than one IP address, changing it after you have activated one requires you to restart the app). Minimize the Gateway app (don't close it) and start the DFFOO client. After the game connects to the server, it won't matter if the Gateway app is still running.
+Simple, just download the version you want from the ``/Android`` folder along with the Gateway app. Install both on the device you want (you may have to make sure the device allows apps to be installed from unofficial sources). Run the Gateway app and enter the IP address and port of the device on the same network running the offline server. After entering the IP address and port number, flick the switch on the right and you should get a message saying your gateway is running (Note: While you can enter more than one IP address, changing it after you have activated one requires you to restart the app). Minimize the Gateway app (don't close it) and start the DFFOO client. After the game connects to the server and you are loaded in, the Gateway app shouldn't be needed anymore.
 
-## iOS
+## For iOS
 
-DFFOO for iOS is a little a different method. The client app has to have to server's IP address hardcoded to it. The Gateway app here is an ipa file signer that runs on your desktop first. It will create the desired version ipa file to access the offline server on an iOS device.
+With DFFOO for iOS, the method is a little different as Apple has more protections. The client app has to have your offline server's IP address hardcoded to it with a permissions changed in order to work. Because of this, there is no Gateway app here. If your offline server's IP Address changes, you'll have to create a new ipa file and reinstall the app. So you must first run the dffoo_gateway app and follow the prompts to create the ipa file of the version you want to play (GL or JP).
 
-Check the release for builds. Simply run the app and follow the prompts. Enter the version of the game you want and the IP address and port for the server you're connecting to.
+It will generate a __OperaOmnia_GL.ipa__ or __OperaOmnia_JP.ipa__ file for sideloading. Check out [Sideloadly](https://sideloadly.io/) or [AltStore](https://altstore.io/) for non-jailbroken methods of installing. If your iOS is supported, [TrollStore](https://github.com/opa334/TrollStore) allows apps to be permasigned to the device without the need for refreshing.
 
-It will generate a __OperaOmnia_GL.ipa__ or __OperaOmnia_JP.ipa__ file for sideloading. Check out [Sideloadly](https://sideloadly.io/) or [Altstore](https://altstore.io/) for non-jailbroken methods of installing.
+Check the release for pre-build executables without needing Node to run.

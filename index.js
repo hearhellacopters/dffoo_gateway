@@ -32,14 +32,6 @@ function MD5(msg) {
     return crypto("md5").update(msg).digest("hex");
 }
 
-function SHA1(msg) {
-    return crypto("sha1").update(msg).digest("base64");
-}
-
-function SHA256(msg) {
-    return crypto("sha256").update(msg).digest("base64");
-}
-
 function unzipWithProgressBar(sourceZip, outputLocation, unzipDirectory) {
     try {
         // Check if the file exists
@@ -101,7 +93,7 @@ function unzipWithProgressBar(sourceZip, outputLocation, unzipDirectory) {
             });
 
             zipfile.on('end', () => {
-                resolve('Unzipping completed successfully');
+                resolve('\x1b[32m[Completed]\x1b[0m: Unzipping successfully');
             });
 
             zipfile.on('error', (err) => {
@@ -415,12 +407,12 @@ function concat_files(directory, files, output_path) {
             const readStream = fs.createReadStream(filePath);
 
             readStream.on('error', (err) => {
-                reject(`Error reading file ${filePath}: ${err.message}`);
+                reject(`\x1b[31m[Error]\x1b[0m: reading file ${filePath}: ${err.message}`);
                 make_exit();
             });
 
             writeStream.on('error', (err) => {
-                reject(`Error writing to output file: ${err.message}`);
+                reject(`\x1b[31m[Error]\x1b[0m: writing to output file: ${err.message}`);
                 make_exit();
             });
 
@@ -444,18 +436,19 @@ async function main() {
 
     do {
         try {
-            ver = await promptWithMultipleChoice("\x1b[36mWhat verison would you like to create?\x1b[m", ["GL", "JP"])
+            ver = await promptWithMultipleChoice("\x1b[36mWhat verison would you like to create?\x1b[0m", ["GL", "JP"])
         } catch (error) {
-            console.log("Invalid input.");
+            console.log("\x1b[31m[Error]\x1b[0m: Invalid input.");
         }
     } while (!ver);
 
     console.log(`\x1b[32m[Accepted]\x1b[0m: ${ver}`);
     if(!(await readFileIfExists(__dirname + "/data.zip"))){
-        console.log(`Merging data.zip...`);
+        console.log(`\x1b[36m[Merging]\x1b[0m: data.zip...`);
         const parts = ["/data.zip.001","/data.zip.002"];
         await concat_files(__dirname, parts, __dirname + "/data.zip");
-        console.log(`data.zip merge complete!`);
+        console.log(`\x1b[32m[Finished]\x1b[0m: data.zip merge complete!`);
+        fs.rmSync(__dirname + "/data.zip", __dirname + "/_tmp/", { recursive: true, force: true });
         //console.log(`Cleaning up data.zip parts...`);
         //parts.forEach(file => {
         //    //delete file parts to save space.
@@ -466,7 +459,7 @@ async function main() {
     };
     await unzipWithProgressBar(__dirname + "/data.zip", __dirname + "/_tmp/", ver);
     console.log("");
-    console.log("Checking file hash. Please wait...");
+    console.log("\x1b[36m[Checking]\x1b[0m: File hash. Please wait...");
     const database = await readFileIfExists(__dirname + "/_tmp/Payload/OperaOmnia.app/OperaOmnia", true);
     const hash = MD5(database);
     if (hash != CONSTS[ver].hash) {
@@ -480,40 +473,40 @@ async function main() {
     var url;
     do {
         try {
-            console.log(`\x1b[36mEnter the new IP address / URL to the offline server (this device's IP address is \x1b[33m${IPAddress}\x1b[0m\x1b[36m).\x1b[0m`);
-            console.log(`\x1b[36mFor local IP addresses, it MUST include http and port like \x1b[33mhttp://${IPAddress}:8000/\x1b[0m\x1b[36m.\x1b[0m`);
-            console.log(`\x1b[36mMax length of 56 characters\x1b[33m`);
-            const answer = await ask(`[URL]\x1b[0m: `);
+            console.log(`\x1b[36mEnter the new IP address / URL to the offline server (this device is using \x1b[33m${IPAddress}\x1b[0m\x1b[36m).\x1b[0m`);
+            console.log(`\x1b[36mFor local IP addresses, it MUST include http, port and end with a forward slash.\x1b[0m`);
+            console.log(`\x1b[36mExample: \x1b[33mhttp://${IPAddress}:8000/\x1b[0m\x1b[36m. Max length of 56 characters\x1b[0m`);
+            const answer = await ask(`\x1b[33m[URL]\x1b[0m: `);
             if (answer.length >= 56 || answer.length <= 0) {
                 console.log(`\x1b[31m[Error]\x1b[0m: Invalid URL length. Must be less than 56 characters.`);
             } else
             if(!answer.startsWith("http")){
-                console.log(`\x1b[31m[Error]\x1b[0m: MUST start with http.`);
+                console.log(`\x1b[31m[Error]\x1b[0m: MUST start with http or https.`);
             } else
             if(!(answer.startsWith("http://") || answer.startsWith("https://"))){
                 console.log(`\x1b[31m[Error]\x1b[0m: MUST start with https:// or http://.`);
             } else
             if(answer.endsWith("//")){
-                console.log(`\x1b[31m[Error]\x1b[0m: MUST end with a slash '/'.`);
+                console.log(`\x1b[31m[Error]\x1b[0m: MUST end with a forward slash '/'.`);
             } else 
             if(!answer.endsWith("/")){
-                console.log(`\x1b[31m[Error]\x1b[0m: MUST end with a slash '/'.`);
+                console.log(`\x1b[31m[Error]\x1b[0m: MUST end with a forward slash '/'.`);
             }
             else {
-                const confrim = await promptUser(`\x1b[33m${answer}\x1b[m\nIs this correct (Y/N)? `);
+                const confrim = await promptUser(`\x1b[33m${answer}\x1b[0m\nIs this correct (Y/N)? `);
                 if (confrim == "y") {
                     url = answer;
                 }
             }
         } catch (error) {
-            console.log("Invalid input.");
+            console.log("\x1b[31m[Error]\x1b[0m: Invalid input.");
         }
     } while (!url);
     console.log(`\x1b[32m[Accepted]\x1b[0m: ${url}`);
 
     const lib = new biwriter(database);
 
-    const patch_total = 12;
+    const patch_total = 13;
     var i = 1;
     consoleLoadingBar(patch_total, i++, "Patching");
     lib.goto(CONSTS[ver].base);
@@ -556,21 +549,26 @@ async function main() {
     //const codesig_file = codesig.toString().replace(/\*\*\*/gm, edit_hash);
     fs.writeFileSync(__dirname + "/_tmp/Payload/OperaOmnia.app/0000/mst_web_url_data.json", json_edit2);
     //fs.writeFileSync(__dirname + "/_tmp/Payload/OperaOmnia.app/_CodeSignature/CodeResources", codesig_file);
-    //consoleLoadingBar(patch_total, i++, "Patching");
+    consoleLoadingBar(patch_total, i++, "Patching");
     //const root_edit = await readFileIfExists(__dirname + "/_tmp/Payload/OperaOmnia.app/Settings.bundle/Root.plist", true);
     //const root_edit2 = root_edit.toString().replace(/\*\*\*/gm, url);
     //fs.writeFileSync(__dirname + "/_tmp/Payload/OperaOmnia.app/Settings.bundle/Root.plist", root_edit2);
+    //const plist = await readFileIfExists(__dirname + "/_tmp/Payload/OperaOmnia.app/Info.plist", true);
+    //const clean_url = url.match(/^[a-zA-Z]+:\/\/([^:/]+)/)[1];
+    //const plist4 = plist.replace(/<key>cache-game.g.dissidiaff-oo.com<\/key>/, "<key>" + clean_url +"</key>");
+    //const plist5 = plist4.replace(/<key>cache-game.dissidiaff-oo.com<\/key>/, "<key>" + clean_url +"</key>");
+    //fs.writeFileSync(__dirname + "/_tmp/Payload/OperaOmnia.app/Info.plist", plist5);
     consoleLoadingBar(patch_total, i++, "Patching");
     console.log(`\n\x1b[32m[Completed]\x1b[0m: Finished Patching.`);
-    console.log(`Creating new .ipa file. Please wait...`);
+    console.log(`\x1b[36m[Creating]\x1b[0m: new .ipa file. Please wait...`);
     await createIPA(__dirname + "/_tmp",__dirname+`/OperaOmnia_${ver}.ipa`);
-    console.log(`\x1b[32m[success]\x1b[0m: IPA file created!`);
-    console.log(`Cleaning up. Please wait...`);
+    console.log(`\x1b[32m[Success]\x1b[0m: IPA file created!`);
+    console.log(`\x1b[36m[[Cleaning up]\x1b[0m: Please wait...`);
     if (fs.existsSync(__dirname + "/_tmp")) {
         fs.rm(__dirname + "/_tmp", { recursive: true }, () => { });
     }
     console.log(`\x1b[36m[Process Completed]\x1b[0m`);
-    console.log("\x1b[33m"+__dirname+`/OperaOmnia_${ver}.ipa\x1b[0m ready to be sideloaded!`)
+    console.log("\x1b[33m"+__dirname+`\\OperaOmnia_${ver}.ipa\x1b[0m ready to be sideloaded!`)
     make_exit();
 }
 

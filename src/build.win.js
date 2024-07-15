@@ -6,7 +6,7 @@ const exe = require("@angablue/exe");
 const package = require('../package.json');
 
 const build = exe({
-  entry: "./src/index.js",
+  entry: "./index.js",
   out: "./dffoo_gateway.exe",
   pkg: ["-C", "GZip"], // Specify extra pkg arguments
   version: package.version,
