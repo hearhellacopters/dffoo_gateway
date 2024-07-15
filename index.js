@@ -323,7 +323,7 @@ console.log("\x1b[35m                                                           
 console.log("")
 
 
-const JP_hash = "f05969ff39f60d8de4c4b3e453d88822";
+const JP_hash = "80987fc1dfa785b87c97a40e49a99daf";
 const JP_Base = 0xD012B0
 const JP_Assets = 0xD012F0
 const JP_Photon = 0xD01330
