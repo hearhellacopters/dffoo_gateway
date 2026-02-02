@@ -104,6 +104,16 @@ __Note:__ All sideload apps have a 7 day window of operation for free Apple Deve
 
 __Note:__ All sideload apps have a 7 day window of operation for free Apple Developer accounts. You will need to re-new the app on the device between those 7 days for it to continue to work. Free developer accounts only allow 3 apps installed at a time (per account __NOT__ device). __And AltStore will take up one.__ So make sure you choose what apps you want very carefully as you can't revoke any, you'll have to wait for time to expire before you can add another. __If you have AltStore and the GL and JP verisons, that's all 3 slots!__
 
+### [SideStore](https://sidestore.io/)
+
+**Difficulty**: Medium
+
+![sidestore](./imgs/sidestore.png "SideStore for iOS")
+
+[SideStore](https://sidestore.io/) is an alternative to [AltStore](#altstore). It works in the same manner but __does NOT need a server running on your machine that you sideloaded on__. It allows you to install other apps directly from within the device without using a PC or Mac machine after sideloading the main app. But it does use a VPN, so if you use a VPN, you will have to switch back while using it. Like AltStore, you can add the repo as a source to download the game clients directly via `https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/AltSource.json`
+
+__Note:__ All sideload apps have a 7 day window of operation for free Apple Developer accounts. You will need to re-new the app on the device between those 7 days for it to continue to work. Free developer accounts only allow 3 apps installed at a time (per account __NOT__ device). __And SideStore will take up one.__ So make sure you choose what apps you want very carefully as you can't revoke any, you'll have to wait for time to expire before you can add another. __If you have SideStore and the GL and JP verisons, that's all 3 slots!__
+
 ### [TrollStore](https://ios.cfw.guide/installing-trollstore/)
 
 **Difficulty**: Medium
