@@ -1,0 +1,121 @@
+{
+    "name": "Opera Omnia Gateway",
+    "subtitle": "Opera Omnia clients for offline server play.",
+    "description": "Download modded Opera Omnia clients for offline server play.",
+    "iconURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/imgs/iconURL.png",
+    "headerURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/imgs/headerURL.png",
+    "website": "https://hearhellacopters.github.io/dffoo_gateway/",
+    "tintColor": "#7cadd2",
+    "featuredApps": [
+        "com.square-enix.DFFOperaOmnian",
+        "com.square-enix.DFFOperaOmniaj"
+    ],
+    "apps": [
+        {
+            "name": "DISSIDIA FINAL FANTASY OPERA OMNIA",
+            "bundleIdentifier": "com.square-enix.DFFOperaOmnian",
+            "developerName": "SQUARE ENIX Co",
+            "subtitle": "The legendary heroes of Final Fantasy join forces.",
+            "localizedDescription": "----------------------------------------\n◆ Game Info ◆\n----------------------------------------\n● A Dream Collaboration!\nLegendary heroes and villains from across the FINAL FANTASY series come together in a compelling story of powerful deities and a world in peril. Fans of the series will see their favorite characters in a brand-new adventure, and newcomers will experience the compelling story, drama, and combat that the FINAL FANTASY series is known for!\n\n● Turn-Based Combat with a Twist!\nEngage in simple yet strategic turn-based combat! The unique Bravery system challenges you to balance offense with defense as you build up your Bravery and wait for the right moment to strike!\n\n● Assemble Your Party!\nBuild parties from a cast of dozens of FINAL FANTASY heroes and villains and prepare them for battle with a variety of equipment and abilities. Embark on a journey alongside beloved characters and encounter familiar faces, summons, and more along the way!\n\n----------------------------------------\n◆ Story ◆\n----------------------------------------\nDarkness converges upon us, and the world crumbles before our very eyes…\nWhat was once a sanctuary for the weary has now become a battlefield.\nLong ago, the deities Spiritus and Materia warped the fabric of time and space to create a new world—a world they populated with warriors from other realms.\nThese men and women were forced to fight day and night without reprieve, and the strain of endless battle soon grew to be too great.\nWith battered bodies and shattered spirits, they sent out a cry for help…",
+            "iconURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/iconURL.png",
+            "tintColor": "#97aad0",
+            "screenshots": [
+                "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/1.png",
+                "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/2.png",
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/3.png",
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/4.png",
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/5.png",
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/6.png",
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/7.png",
+            ],
+            "versions": [
+                {
+                    "version": "1.35.1",
+                    "date": "2023-11-28T09:00:00-08:00",
+                    "size": 70340608,
+                    "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/GL/com.square-enix.DFFOperaOmnian-1.35.1-mod.ipa",
+                    "localizedDescription": "Version 1.35.1\n- Data for upcoming events.\n- Various UI changes and bug fixes.",
+                    "minOSVersion": "11.0"
+                }
+            ],
+            "appPermissions": {
+                "entitlements": [
+                    "com.apple.developer.aps-environment",
+					"com.apple.developer.game-center"
+                ],
+                "privacy": {
+                    "NSUserTrackingUsageDescription": "This app uses IDFA (Identity for Advertisers) to measure and analyse the effects of advertising.",
+					"NSPhotoLibraryUsageDescription": "Photo access for sharing"
+                }
+            }
+        },
+        {
+            "name": "ディシディア ファイナルファンタジー オペラオムニア",
+            "bundleIdentifier": "com.square-enix.DFFOperaOmniaj",
+            "developerName": "SQUARE ENIX Co",
+            "subtitle": "The legendary heroes of Final Fantasy join forces.",
+            "localizedDescription": "----------------------------------------\n◆ Game Info ◆\n----------------------------------------\n● A Dream Collaboration!\nLegendary heroes and villains from across the FINAL FANTASY series come together in a compelling story of powerful deities and a world in peril. Fans of the series will see their favorite characters in a brand-new adventure, and newcomers will experience the compelling story, drama, and combat that the FINAL FANTASY series is known for!\n\n● Turn-Based Combat with a Twist!\nEngage in simple yet strategic turn-based combat! The unique Bravery system challenges you to balance offense with defense as you build up your Bravery and wait for the right moment to strike!\n\n● Assemble Your Party!\nBuild parties from a cast of dozens of FINAL FANTASY heroes and villains and prepare them for battle with a variety of equipment and abilities. Embark on a journey alongside beloved characters and encounter familiar faces, summons, and more along the way!\n\n----------------------------------------\n◆ Story ◆\n----------------------------------------\nDarkness converges upon us, and the world crumbles before our very eyes…\nWhat was once a sanctuary for the weary has now become a battlefield.\nLong ago, the deities Spiritus and Materia warped the fabric of time and space to create a new world—a world they populated with warriors from other realms.\nThese men and women were forced to fight day and night without reprieve, and the strain of endless battle soon grew to be too great.\nWith battered bodies and shattered spirits, they sent out a cry for help…",
+            "iconURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/JP/imgs/iconURL.png",
+            "tintColor": "##97aad0",
+            "screenshots": [
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/JP/imgs/1.png",
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/JP/imgs/2.png",
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/JP/imgs/3.png",
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/JP/imgs/4.png",
+				"https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/JP/imgs/5.png",
+            ],
+            "versions": [
+                {
+                    "version": "1.82.0",
+                    "date": "2023-11-22T09:00:00-08:00",
+                    "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/JP/com.square-enix.DFFOperaOmnian-1.82.0-mod.ipa",
+                    "localizedDescription": "Version 1.82.0\n- Bug fixes and performance improvements.",
+                    "size": 66764800,
+                    "minOSVersion": "11.0"
+                }
+            ],
+            "appPermissions": {
+                "entitlements": [
+                    "com.apple.developer.aps-environment",
+					"com.apple.developer.game-center"
+                ],
+                "privacy": {
+                    "NSUserTrackingUsageDescription": "This app uses IDFA (Identity for Advertisers) to measure and analyse the effects of advertising.",
+					"NSPhotoLibraryUsageDescription": "Photo access for sharing"
+                }
+            }
+        }
+    ],
+    "news": [
+        {
+            "title": "New AltStore Source Created!",
+            "identifier": "new_feature",
+            "caption": "Introducing Opera Omnia modded clients for offline server in AltStore!",
+            "date": "2026-02-01",
+            "tintColor": "#5CA399",
+            "imageURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/1.png",
+            "notify": true,
+            "url": "https://hearhellacopters.github.io/dffoo_gateway/"
+        },
+        {
+            "title": "App Available",
+            "identifier": "app_update",
+            "caption": "Opera Omnia GL has been uploaded!",
+            "date": "2026-02-02T10:00:00-07:00",
+            "tintColor": "#5CA399",
+            "imageURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/GL/imgs/iconURL.png",
+            "notify": false,
+            "appID": "com.square-enix.DFFOperaOmnian"
+        },
+        {
+            "title": "App Available",
+            "identifier": "app_update",
+            "caption": "Opera Omnia JP has been uploaded!",
+            "date": "2026-02-02T10:00:00-07:00",
+            "tintColor": "#5CA399",
+            "imageURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/assets/JP/imgs/iconURL.png",
+            "notify": false,
+            "appID": "com.square-enix.DFFOperaOmniaj"
+        }
+    ]
+}
