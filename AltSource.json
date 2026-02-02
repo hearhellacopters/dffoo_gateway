@@ -88,7 +88,7 @@
     ],
     "news": [
         {
-            "title": "New AltStore Source Created!",
+            "title": "Opera Omnia Gateway AltStore Source Created!",
             "identifier": "store_created",
             "caption": "Introducing Opera Omnia modded clients for offline server in AltStore!",
             "date": "2026-02-01",
@@ -98,7 +98,7 @@
             "url": "https://hearhellacopters.github.io/dffoo_gateway/"
         },
         {
-            "title": "App Available",
+            "title": "Opera Omnia GL Available",
             "identifier": "app_update1",
             "caption": "Opera Omnia GL has been uploaded!",
             "date": "2026-02-02T10:00:00-07:00",
@@ -108,7 +108,7 @@
             "appID": "com.square-enix.DFFOperaOmnian"
         },
         {
-            "title": "App Available",
+            "title": "Opera Omnia JP Available",
             "identifier": "app_update2",
             "caption": "Opera Omnia JP has been uploaded!",
             "date": "2026-02-02T10:00:00-07:00",
