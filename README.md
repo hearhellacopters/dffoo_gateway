@@ -1,48 +1,116 @@
-# Dissidia Final Fantasy Opera Omnia Clients & Gateway + iOS Signing
+# Dissidia Final Fantasy Opera Omnia Clients
 
-Everything for getting your game client running again.
+The everything guide to getting your game client running again!
 
-## For Android Devices
+Table of contense:
+- [Android Devices](#for-android-devices)
+- [Android Emulators](#for-android-emulators)
+- [iOS Devices](#for-ios-devices)
+  - [Sideload Options](#recommended-sideload-options)
+- [Mac Machines](#for-mac-machines)
+- [Linux Machines](#for-linux-machines)
+
+# For Android Devices
 
 **Difficulty**: Easy
 
-For getting the game client running again, simply download the version you want from the [/Android](./Android) folder along with the `DFFOOGateway.apk` app. Install both on the device you want (you may have to make sure the device *allows apps to be installed from unofficial sources*). Run the `Gateway` app and __enter the IP address and port displayed on the device the offline server is running on__. After entering the IP address and port number, toggle on the switch on the right and you should get a message saying your gateway is running (Note: While you can enter more than one IP address, but changing it after you have activated one requires you to restart the app). Minimize the Gateway app (**don't close it**) then start the DFFOO client. After the game connects to the server and you are loaded in, the Gateway app shouldn't be needed untill next launch.
+For getting the game client running again on Android, simply download the apk version of the game you want from the [/clients/Android](./clients/Android) folder. Install it on your device (you may have to make sure the device *allows apps to be installed from unofficial sources*). When you launch the game, it will display a prompt for your offline server address. You'll need to enter in the address displayed on your offline server. It should be formated as displayed with http://[ip address]:[active port]/ (ending in a slash). After entered, it will persist between launches. So after the first entry, anytime you start the game, the same address will be redisplay. Then you'll only have to hit "ok" and continue on.
 
-## For Android Emulators
+![android](./imgs/android.png "Android URL entry")
+
+# For Android Emulators
 
 **Difficulty**: Easy
 
-Any emulator that ran the offical client should be able to run our modded one. Just follow the direction for [Android Devices](#for-android-devices) and you should be fine. Again making sure the device *allows apps to be installed from unofficial sources*.
+Any emulators that ran the offical client should be able to run the modded versions. Just follow the direction for [Android Devices](#for-android-devices) after downloading the apk version of the game you want from the [/clients/Android](./clients/Android) folder and you should be fine. Again, making sure the device *allows apps to be installed from unofficial sources*.
 
-### Recommended Emulator
+## Recommended Android Emulators
 
-**Difficulty**: Medium
+### [MuMu Player](https://www.mumuplayer.com/)
 
-If you're running Windows 11, a simple emulator set up can be found in [Windows Subsystem for Android](https://github.com/MustardChef/WSABuilds/releases). Look for Windows 11 x64 builds (or ARM64 if you're running Windows installed on a Mac machine). Look for `NoGApps-RemovedAmazon` in the file title for a bare bones, no bloatware set up. Follow the install instructions. Then for the best preformance...
+**Difficulty**: Easy
+
+![mumu](./imgs/mumu.png "MuMu Player")
+
+[MuMu Player](https://www.mumuplayer.com/) as of v5.0 is ad and bloatware free. On Windows, it works with Hyper-V enabled as well as a bunch of improvements over other emulators I have tried. There are versions for Mac and a beta for Linux as of writing this. This is our recommended emulator for Windows.
+
+### [Waydroid](https://waydro.id/)
+
+**Difficulty**: Easy
+
+![waydroid](./imgs/waydroid.png "Waydroid for Linux")
+
+If you have a Linux based system, [Waydroid](https://waydro.id/) is the way to go. Being that both the Android client and Linux are Arm64 based, Waydroid is less of an emultor and more of a transition layer. You'll get not only the best performance outside of a Android device, but also the the easiest to maintain. This is our recommended emulator for Linux systems.
+
+### [Windows Subsystem for Android](https://github.com/MustardChef/WSABuilds/releases)
+
+**Difficulty**: Medium / Hard
+
+![WSA](./imgs/wsa.png "Windows Subsystem for Android")
+
+If you're running Windows 11, one of the (formally) best integrated emulator you can get is [Windows Subsystem for Android](https://github.com/MustardChef/WSABuilds/releases). It has the feel of Waydroid for Linux but on Windows. Apps have thir own Windows and can you install apk files directly to your system. 
+
+Unfortunately Windows has stop its support for the system in 2025 and taken down most install locations. But fortunately [MustardChef](https://github.com/MustardChef/WSABuilds) on github has kept a working build. There are issues and it can (and has) break on any given Windows update. But if a fully integrated system is what you're looking for, this might be worth the headache.
+
+Go to [MustardChef release](https://github.com/MustardChef/WSABuilds/releases) for Windows 11 x64 builds (or ARM64 if you're running Windows installed on a Mac machine). Look for `NoGApps-RemovedAmazon` in the file title for a bare bones, no bloatware set up. Follow the install instructions. Then for the best preformance...
 
 In Advanced Settings: 
 - Turn on `Developer mode`. 
-- In `Memory and preformance`, set memory allocations to least `6 GB` (recommended `Custom 8192`)
+- In `Memory and preformance`, set memory allocations to least `6 GB` (recommended `Custom 8192` as 8 GB)
 - Set `Graphics preference` to `High preformance`
 - Set `Window focus` to `Independent`
 - In `Experimental features`, turn on `Local network access` and `Share user folders` then set it to where you downloaded the .apk files.
 
 If you have `Share user folders` on, click back to the `System` tab then open `Files`. It should open the Files app to display a `Windows` folder at the bottom. The apk file should be displayed inside. Clicking on it will install the game client. You can verify that it installed by clicking the `Apps` tab in `Windows Subsystem for Android` window and seeing if it's displayed.
 
-As a bonus, if you have `Local network access` active and you're on the same system running the offline server, you won't need the `DFFOOGateway.apk` app. The the client will automatically connect without the need for an IP switch.
+As a bonus, if you have `Local network access` active and you're on the same system running the offline server, you can keep the offline server URL to the default `http://127.0.0.1:8000/`. The the client will automatically connect without the need for a machine IP address.
 
-## For iOS Devices
+# For iOS Devices
 
 **Difficulty**: Hard
 
-With DFFOO for iOS, the method is a little different as Apple has more protections. The client app has to have your offline server's IP address hardcoded to it with a permissions changed in order to work. Because of this, there is no sidecar Gateway app, just a `dffoo_ios_signer` app for the ipa file that can be found in [releases](https://github.com/hearhellacopters/dffoo_gateway/releases). **NOTE:** If your offline server's IP address changes, you'll have to sign a new ipa file and re-install the app. So you must first run the `dffoo_ios_signer` app and follow the prompts to create the ipa file of the version you want to play (GL or JP).
+With Opera Omnia for iOS, the method is a little different as Apple has more protections but you do have a few options for sideloading. 
 
-It will generate a __OperaOmnia_GL.ipa__ or __OperaOmnia_JP.ipa__ file for sideloading. Check out [Sideloadly](https://sideloadly.io/) or [AltStore](https://altstore.io/) for non-jailbroken methods of installing. If your iOS is supported by [TrollStore](https://github.com/opa334/TrollStore), it will allows apps to be perma-signed to the device without the need for refreshing once a week.
+If you have a jailbroken device, you can simply download the ipa version of the game you want from the [/clients/iOS](./clients/iOS) folder and install with whatever installer you use. Once installed, go to your Settings app and find the app name. Scroll down and you should see "Offline Server URL" as a field you can edit. You'll need to enter in the address displayed on your offline server. It should be formated as displayed with http://[ip address]:[active port]/ (ending in a slash). After entered, you can run the game as you normally would and you shouldn't have any issues (you will likely get a message asking you for permissions to use local network communications, you must allow or you'll get 404 errors).
 
-Check [releases](https://github.com/hearhellacopters/dffoo_gateway/releases) for pre-build executables without the need to run the code on Node.
+__Note:__ You must have the app installed a "User" app not a "System" or the game won't appear in the Settings. Most jailbreaks let you switch the type of install. So you may have to switch it from System to User and then back to System.
 
-## For Mac Devices
+![ios](./imgs/ios.png "iOS settings")
+
+## Recommended Sideload Options
+
+For non-Jailbroken devices:
+
+### [Sideloadly](https://sideloadly.io/)
 
 **Difficulty**: Medium
 
-Follow the direction for [iOS Devices](#for-ios-devices) to create your api file, then use [Sideloadly](https://sideloadly.io/) to install it directly to your Mac. **NOTE:** While this should work, I haven't tested this. You will also have the same limits as Sideloadly for iOS where you need to refresh the app every 7 days.
+![sideloadly](./imgs/sideloadly.png "Sideloadly for iOS and Mac")
+
+Check out [Sideloadly](https://sideloadly.io/) for a non-jailbroken method of installing. You can use this program to now only sideload apps to your non-jailbroken iOS device but also your Mac. It requires a server running on your machine that you sideloaded on to have access to refreshing the install of the app or it will expire.
+
+__Note:__ All sideload apps have a 7 day window of operation for free Apple Developer accounts. You will need to re-new the app on the device between those 7 days for it to continue to work. Free developer accounts only allow 3 apps installed at a time. So make sure you choose what apps you want very carefully as you can't revoke any, you'll have to wait for time to expire before you can add another.
+
+### [AltStore](https://altstore.io/)
+
+**Difficulty**: Medium
+
+![altstore](./imgs/altstore.png "AltStore for iOS")
+
+[AltStore](https://altstore.io/) works just like [Sideloadly](#sideloadly) on non-jailbroken devices but it's an app that installs directly to your device. It allows you to install other apps directly from within without using a PC or Mac machine there after. But it uses the same tech as Sideloadly so you will also need a server running on your machine that you sideloaded on.
+
+__Note:__ All sideload apps have a 7 day window of operation for free Apple Developer accounts. You will need to re-new the app on the device between those 7 days for it to continue to work. Free developer accounts only allow 3 apps installed at a time. __And AltStore will take up one.__ So make sure you choose what apps you want very carefully as you can't revoke any, you'll have to wait for time to expire before you can add another. __If you have AltStore and the GL and JP verisons, that's all 3 slots!__
+
+### [TrollStore](https://ios.cfw.guide/installing-trollstore/)
+
+**Difficulty**: Medium
+
+![trollstore](./imgs/trollstore.png "Trollstore for iOS")
+
+If you have an iOS device with with an OS between iOS 14 and iOS 17 [TrollStore](https://ios.cfw.guide/installing-trollstore/) should be able to work. Unlike [Sideloadly](#sideloadly) and [AltStore] (#altstore), it will allows apps to be perma-signed to the device without the need for refreshing once a week.
+
+# For Mac Machines
+
+**Difficulty**: Medium
+
+Follow the direction for [iOS Devices](#for-ios-devices), then use [Sideloadly](https://sideloadly.io/) to install it directly to your Mac. **NOTE:** While this should work, I haven't tested this. You will also have the same limits as Sideloadly for iOS where you need to refresh the app every 7 days.
