@@ -1,0 +1,25 @@
+{
+  "GL_Android": {
+    "google": "1WeHWkp46OsLiXETCg3_HqHtzT_V7nADM",
+    "mega": "UzRliSwb#dxLk8O2jhrcj74hkjXPMXQ"
+  },
+  "GL_iOS": {
+    "google": "1ggyc5rEWli7auOaZe3uAiF2vH59iTCHh",
+    "mega": "BrRBhJqS#OIj40eejLwQcY_yE1OdX0g"
+  },
+  "JP_Android": {
+    "google": "1v52yKohjuWE3UFknGNbRKDM6TP1rz17h",
+    "mega": "N74wAYpA#pB8NJqo3G2DcMACnxHQnKQ"
+  },
+  "JP_iOS": {
+    "google": "1rig93vCtRwVGi28vzq9jMCVKJ9acIqlY",
+    "mega": "EvhmTCzB#F8VLwDUB0iECXZlDYTnWLw"
+  },
+  "patches":[
+    {
+      "name": "GL_Default_Patch",
+      "google": "1VvD0TzDUK8BG5t7WEKUEEfld82RI41XZ",
+      "mega": "oioklbqQ#j9tqXhvKYNsRcGhPXvNyjA"
+    }
+  ]
+}
