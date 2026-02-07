@@ -1,6 +1,10 @@
-
 {
-    "Default_GL_Patch":{
-      "0.1": "b477bc4c2e714c066f603481de7b6a4e"
-    }
+  "Default_GL_Patch": {
+    "patch_version": "0.0.1",
+    "game_version": "GL",
+    "min_server_version": "0.0.1",
+    "mega": "8yJEVCSK#52cK1MtZkmaawh1_W1RWp67RQBHknUE6nERC91wsGDA",
+    "google": "1XeJ1uf5feK6Gxi4YqndHSoXgIvffpIIV",
+    "hash": "6e29b4a0e6d79343135f5b6af873d8195377b25ac5b10a469e0e2c3d0b10692b"
+  }
 }

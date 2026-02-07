@@ -14,7 +14,7 @@ Table of contense:
 
 **Difficulty**: Easy
 
-For getting the game client running again on Android, simply download the apk version of the game you want from the [/clients/Android](./clients/Android) folder. Install it on your device (you may have to make sure the device *allows apps to be installed from unofficial sources*). When you launch the game, it will display a prompt for your offline server address. You'll need to enter in the address displayed on your offline server. It should be formated as displayed with http://[ip address]:[active port]/ (ending in a slash). After entered, it will persist between launches. So after the first entry, anytime you start the game, the same address will be redisplay. Then you'll only have to hit "ok" and continue on.
+For getting the game client running again on Android, simply download the apk version of the game you want from the [/clients/Android](https://github.com/hearhellacopters/dffoo_gateway/tree/main/clients/Android) folder. Install it on your device (you may have to make sure the device *allows apps to be installed from unofficial sources*). When you launch the game, it will display a prompt for your offline server address. You'll need to enter in the address displayed on your offline server. It should be formated as displayed with http://[ip address]:[active port]/ (ending in a slash). After entered, it will persist between launches. So after the first entry, anytime you start the game, the same address will be redisplay. Then you'll only have to hit "ok" and continue on.
 
 ![android](./imgs/android.png "Android URL entry")
 
@@ -22,7 +22,7 @@ For getting the game client running again on Android, simply download the apk ve
 
 **Difficulty**: Easy
 
-Any emulators that ran the offical client should be able to run the modded versions. Just follow the direction for [Android Devices](#for-android-devices) after downloading the apk version of the game you want from the [/clients/Android](./clients/Android) folder and you should be fine. Again, making sure the device *allows apps to be installed from unofficial sources*.
+Any emulators that ran the offical client should be able to run the modded versions. Just follow the direction for [Android Devices](#for-android-devices) after downloading the apk version of the game you want from the [/clients/Android](https://github.com/hearhellacopters/dffoo_gateway/tree/main/clients/Android) folder and you should be fine. Again, making sure the device *allows apps to be installed from unofficial sources*.
 
 ## Recommended Android Emulators
 
@@ -48,9 +48,9 @@ If you have a Linux based system, [Waydroid](https://waydro.id/) is the way to g
 
 ![WSA](./imgs/wsa.png "Windows Subsystem for Android")
 
-If you're running Windows 11, one of the (formally) best integrated emulator you can get is [Windows Subsystem for Android](https://github.com/MustardChef/WSABuilds/releases). It has the feel of Waydroid for Linux but on Windows. Apps have thir own window and apk files are installed directly to your system as if they were Windows apps. 
+If you're running Windows 11, one of the (formally) best integrated emulator you can get is [Windows Subsystem for Android](https://github.com/MustardChef/WSABuilds/releases). It has the feel of Waydroid for Linux but on Windows. Apps have their own window and apk files are installed directly to your system as if they were Windows apps. 
 
-Unfortunately Windows has stop support for the system as of 2025 and taken down most methods of installation. But fortunately [MustardChef](https://github.com/MustardChef/WSABuilds) on github has maintained a working build. There are issues and it can break (and has) on any given Windows update. But if a fully integrated system is what you're looking for, this might be worth the headache.
+Unfortunately, Windows has stop support for this system as of 2025 and taken down most methods of installation. But fortunately [MustardChef](https://github.com/MustardChef/WSABuilds) on github has maintained a working build. There are issues and it can break (and has) on any given Windows update. But if a fully integrated system is what you're looking for, this might be worth the headache.
 
 Go to [MustardChef release](https://github.com/MustardChef/WSABuilds/releases) for Windows 11 x64 builds (or ARM64 if you're running Windows installed on a Mac machine). Look for `NoGApps-RemovedAmazon` in the file title for a bare bones, no bloatware set up. Follow the install instructions. Then for the best preformance use these settings:
 
@@ -74,7 +74,7 @@ As a bonus, if you have `Local network access` active and you're on the same sys
 
 With Opera Omnia for iOS, the method is a little different as Apple has more protections but you do have a few options for sideloading. 
 
-But the easiest way is if you have a jailbroken device. You can simply download the ipa version of the game you want from the [/clients/iOS](./clients/iOS) folder and install it with whatever installer you use. Once installed, go to your Settings app and find the app name. Scroll down and you should see "Offline Server URL" as a field you can edit. You'll need to enter in the address displayed on your offline server. It should be formated as displayed with http://[ip address]:[active port]/ (ending in a slash). After entered, you can run the game as you normally would and you shouldn't have any issues (you will likely get a message asking you for permissions to use local network communications on first launch, you must allow or you'll get 404 errors).
+But the easiest way is if you have a jailbroken device. You can simply download the ipa version of the game you want from the [/clients/iOS](https://github.com/hearhellacopters/dffoo_gateway/tree/main/clients/iOS) folder and install it with whatever installer you use. Once installed, go to your Settings app and find the app name. Scroll down and you should see "Offline Server URL" as a field you can edit. You'll need to enter in the address displayed on your offline server. It should be formated as displayed with http://[ip address]:[active port]/ (ending in a slash). After entered, you can run the game as you normally would and you shouldn't have any issues (you will likely get a message asking you for permissions to use local network communications on first launch, you must allow or you'll get 404 errors).
 
 __Note:__ You must have the app installed a __"User"__ app not a __"System"__ app (something a lot of jailbreaks do) or the game won't appear in Settings. Most jailbreaks let you switch the type of install. So you may have to switch it from __System__ to __User__ and then back to __System__ to enter the url.
 
