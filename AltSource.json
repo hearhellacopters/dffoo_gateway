@@ -22,7 +22,7 @@
             "absoluteVersion": "1.35.1",
             "versionDate": "2023-11-28T09:00:00-08:00",
             "versionDescription": "Version 1.35.1\n- Data for upcoming events.\n- Various UI changes and bug fixes.",
-            "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/GL/com.square-enix.DFFOperaOmnian-1.35.1-mod.ipa",
+            "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/GL/com.square-enix.DFFOperaOmnian-1.35.1-mod_signed.ipa",
             "size": 70340608,
             "subtitle": "The legendary heroes of Final Fantasy join forces.",
             "localizedDescription": "----------------------------------------\n◆ Game Info ◆\n----------------------------------------\n● A Dream Collaboration!\nLegendary heroes and villains from across the FINAL FANTASY series come together in a compelling story of powerful deities and a world in peril. Fans of the series will see their favorite characters in a brand-new adventure, and newcomers will experience the compelling story, drama, and combat that the FINAL FANTASY series is known for!\n\n● Turn-Based Combat with a Twist!\nEngage in simple yet strategic turn-based combat! The unique Bravery system challenges you to balance offense with defense as you build up your Bravery and wait for the right moment to strike!\n\n● Assemble Your Party!\nBuild parties from a cast of dozens of FINAL FANTASY heroes and villains and prepare them for battle with a variety of equipment and abilities. Embark on a journey alongside beloved characters and encounter familiar faces, summons, and more along the way!\n\n----------------------------------------\n◆ Story ◆\n----------------------------------------\nDarkness converges upon us, and the world crumbles before our very eyes…\nWhat was once a sanctuary for the weary has now become a battlefield.\nLong ago, the deities Spiritus and Materia warped the fabric of time and space to create a new world—a world they populated with warriors from other realms.\nThese men and women were forced to fight day and night without reprieve, and the strain of endless battle soon grew to be too great.\nWith battered bodies and shattered spirits, they sent out a cry for help…",
@@ -42,7 +42,7 @@
                     "version": "1.35.1",
                     "date": "2023-11-28T09:00:00-08:00",
                     "size": 70340608,
-                    "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/GL/com.square-enix.DFFOperaOmnian-1.35.1-mod.ipa",
+                    "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/GL/com.square-enix.DFFOperaOmnian-1.35.1-mod_signed.ipa",
                     "localizedDescription": "Version 1.35.1\n- Data for upcoming events.\n- Various UI changes and bug fixes.",
                     "minOSVersion": "11.0"
                 }
@@ -67,7 +67,7 @@
             "absoluteVersion": "1.82.0",
             "versionDate": "2023-11-22T09:00:00-08:00",
             "versionDescription": "Version 1.82.0\n- Bug fixes and performance improvements.",
-            "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/JP/com.square-enix.DFFOperaOmniaj-1.82.0-mod.ipa",
+            "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/JP/com.square-enix.DFFOperaOmniaj-1.82.0-mod_signed.ipa",
             "size": 66764800,
             "subtitle": "The legendary heroes of Final Fantasy join forces.",
             "localizedDescription": "----------------------------------------\n◆ Game Info ◆\n----------------------------------------\n● A Dream Collaboration!\nLegendary heroes and villains from across the FINAL FANTASY series come together in a compelling story of powerful deities and a world in peril. Fans of the series will see their favorite characters in a brand-new adventure, and newcomers will experience the compelling story, drama, and combat that the FINAL FANTASY series is known for!\n\n● Turn-Based Combat with a Twist!\nEngage in simple yet strategic turn-based combat! The unique Bravery system challenges you to balance offense with defense as you build up your Bravery and wait for the right moment to strike!\n\n● Assemble Your Party!\nBuild parties from a cast of dozens of FINAL FANTASY heroes and villains and prepare them for battle with a variety of equipment and abilities. Embark on a journey alongside beloved characters and encounter familiar faces, summons, and more along the way!\n\n----------------------------------------\n◆ Story ◆\n----------------------------------------\nDarkness converges upon us, and the world crumbles before our very eyes…\nWhat was once a sanctuary for the weary has now become a battlefield.\nLong ago, the deities Spiritus and Materia warped the fabric of time and space to create a new world—a world they populated with warriors from other realms.\nThese men and women were forced to fight day and night without reprieve, and the strain of endless battle soon grew to be too great.\nWith battered bodies and shattered spirits, they sent out a cry for help…",
@@ -84,7 +84,7 @@
                 {
                     "version": "1.82.0",
                     "date": "2023-11-22T09:00:00-08:00",
-                    "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/JP/com.square-enix.DFFOperaOmniaj-1.82.0-mod.ipa",
+                    "downloadURL": "https://raw.githubusercontent.com/hearhellacopters/dffoo_gateway/refs/heads/main/clients/iOS/JP/com.square-enix.DFFOperaOmniaj-1.82.0-mod_signed.ipa",
                     "localizedDescription": "Version 1.82.0\n- Bug fixes and performance improvements.",
                     "size": 66764800,
                     "minOSVersion": "11.0"
