@@ -53,7 +53,7 @@
 					"com.apple.developer.game-center"
                 ],
                 "privacy": {
-                    "NSLocationWheninUseUsageDescription": "Allows location sharing",
+                    "NSLocationWhenInUseUsageDescription": "Allows location sharing",
                     "NSUserTrackingUsageDescription": "This app uses IDFA (Identity for Advertisers) to measure and analyse the effects of advertising.",
 					"NSPhotoLibraryUsageDescription": "Photo access for sharing"
                 }
@@ -97,7 +97,7 @@
 					"com.apple.developer.game-center"
                 ],
                 "privacy": {
-                    "NSLocationWheninUseUsageDescription": "Allows location sharing",
+                    "NSLocationWhenInUseUsageDescription": "Allows location sharing",
                     "NSUserTrackingUsageDescription": "This app uses IDFA (Identity for Advertisers) to measure and analyse the effects of advertising.",
 					"NSPhotoLibraryUsageDescription": "Photo access for sharing"
                 }
