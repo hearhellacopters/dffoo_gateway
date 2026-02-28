@@ -7,6 +7,9 @@
       "patch_version": "0.0.1",
       "game_version": "GL",
       "min_server_version": "0.0.1",
+      "desc": "Required patch to play the GL version of the game.",
+      "requires": [],
+      "conflicts": [],
       "mega": "1yIGyB4J#rO6G16179UuLTJiHhdwdcUOBsCxY52J4CfWfJ75XpQ4",
       "google": "1XeJ1uf5feK6Gxi4YqndHSoXgIvffpIIV",
       "hash": "866b8e1ffa1ca61f3005e565c5562fd572329745a63643c4928d47fde1e5c1bc"

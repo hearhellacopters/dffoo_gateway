@@ -80,10 +80,10 @@
       "mega": "8z4STbRb#ajJlX1kiLQt50WLiUAgaPoPrY5I5dxpYx9pyTTy1YII",
       "google": "1HEIhY9pmMAOGbbF8GOZ0NSgr2YA2imF5",
       "hash": "d16ebbcb4b5a5fd9d6f427722ed78f4070030ebeb2628146be137ea0c466737f"
+    },
+    "GL_Android.zip": {
+      "hash": "ce8546797ce3769afccfa21d96d8871f86eb5006101965ac8985c83c331c4c17"
     }
-  },
-  "GL_Android.zip": {
-    "hash": "ce8546797ce3769afccfa21d96d8871f86eb5006101965ac8985c83c331c4c17"
   },
   "GL_iOS": {
     "GL_iOS.zip.001": {
@@ -155,10 +155,10 @@
       "mega": "tyYzjAqI#HZiXthtOtVJ5KbbY-3beiqRQvFpenzNiRs9bfX4HXxg",
       "google": "1y75vGjXRFHLWLP7yfYVq5C7S3B9BfiEj",
       "hash": "0bd180685b8d3850383cb7773915a7cf05ef1d1fc986980d02e73d13f83277e6"
+    },
+    "GL_iOS.zip": {
+      "hash": "839e68579466558d31917fdfd4154524114623b6b23df15b310274a741075522"
     }
-  },
-  "GL_iOS.zip": {
-    "hash": "839e68579466558d31917fdfd4154524114623b6b23df15b310274a741075522"
   },
   "JP_Android": {
     "JP_Android.zip.001": {
@@ -235,10 +235,10 @@
       "mega": "xmxWGSjC#nHtb6qV3wGgX0b5oydIrOO1OvQ5YBQtvTrK9Hyb4uic",
       "google": "1lfDiL2yUKV7N-uZnAbtJ7vWK3zThxkT3",
       "hash": "107f10e1e1fd2b5561dc830caa7edc29c440f6cc51764a85db61a4ffc86f1c76"
+    },
+    "JP_Android.zip": {
+      "hash": "c800cf2effe770887ef0f41e1d1bbf34dff2e74774d77f1d1bf11a4862866d19"
     }
-  },
-  "JP_Android.zip": {
-    "hash": "c800cf2effe770887ef0f41e1d1bbf34dff2e74774d77f1d1bf11a4862866d19"
   },
   "JP_iOS": {
     "JP_iOS.zip.001": {
@@ -310,9 +310,9 @@
       "mega": "0zg0SJZT#94sKP2qxrz21ZRqomJguOkH7WqWR_lAx7PefRc5DpqE",
       "google": "1P0wnnj_1xwFy9clE-WfFnzrNQNyDTfT8",
       "hash": "4458616060407b44c9310223e2a8464720ed27344f9e12483b91161b903f4862"
+    },
+    "JP_iOS.zip": {
+      "hash": "0fd0761ab659ee763ca6b6911d738cf2f8c0e699c1137b1068a1b414d11bfc3a"
     }
-  },
-  "JP_iOS.zip": {
-    "hash": "0fd0761ab659ee763ca6b6911d738cf2f8c0e699c1137b1068a1b414d11bfc3a"
   }
 }
