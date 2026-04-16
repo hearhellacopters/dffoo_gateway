@@ -2,17 +2,23 @@
   "sig": "RMBc/SLe6rBKsF638iICJndJP1gnBWf3BW/8HzYvJcg=",
   "patches": [
     {
-      "name": "Default_GL_Patch",
-      "file": "Default_GL_Patch.zip",
+      "name": "GL_Default_Asset_Patch",
+      "file": "GL_Default_Asset_Patch.zip",
       "patch_version": "0.0.1",
       "game_version": "GL",
       "min_server_version": "0.0.1",
       "desc": "Required patch to play the GL version of the game.",
       "requires": [],
       "conflicts": [],
-      "mega": "1yIGyB4J#rO6G16179UuLTJiHhdwdcUOBsCxY52J4CfWfJ75XpQ4",
-      "google": "1XeJ1uf5feK6Gxi4YqndHSoXgIvffpIIV",
-      "hash": "866b8e1ffa1ca61f3005e565c5562fd572329745a63643c4928d47fde1e5c1bc"
+      "hash": "4a1aa589fca295bd6730019f6c30630331c0d55c0132940952fa58d758d59ee5",
+      "files": [
+        {
+          "name": "GL_Default_Asset_Patch.zip",
+          "mega": "xjITjZCI#iKnsAKZE2G--L_thiVekF3WwEqYKbpSnwVEQO-Sdc7g",
+          "google": "1Xz_QrCQ78xD3C9dQjQ9OL2J1eKbvghvD",
+          "hash": "4a1aa589fca295bd6730019f6c30630331c0d55c0132940952fa58d758d59ee5"
+        }
+      ]
     }
   ]
 }
