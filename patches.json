@@ -6,23 +6,23 @@
       "file": "Default_GL_Patch.zip",
       "patch_version": "0.0.2",
       "game_version": "GL",
-      "min_server_version": "0.0.2",
+      "min_server_version": "0.0.1",
       "desc": "Required patch to play the GL version of the game.",
       "requires": [],
       "conflicts": [],
-      "hash": "577e80f5fd7567e878b22d71f415c06076038c4ce7308ebc40ad63019204802c",
+      "hash": "03369e84eba6fca84f78a8677835eacf69b57adca37781e9708c2e52b6a4efa7",
       "files": [
         {
           "name": "Default_GL_Patch.zip.001",
-          "mega": "VnJwgQgQ#hzdi5C_oLEf_e_lPntrr5u0GasJk76BhBaZe06cQv6Y",
+          "mega": "cj4nGTJK#z8wE-3eZBm9EWMmxRKl9ll5dE5ZQ5YA4_XmUvQdbwCw",
           "google": "1cfmSUpmemmOLYxEaM_UHLHDmCNnMesML",
-          "hash": "120d4a1525dff857be8a17b1efdeec4126f4ed0cd53dcde26312980506e76bcd"
+          "hash": "77f2d676491647f8d55b4f36d3352e776a523675bb470f5988b1a477f9841c89"
         },
         {
           "name": "Default_GL_Patch.zip.002",
-          "mega": "86ZAhLIb#LzP_WytBg2yrERwHeYC38qVjMxLsn9GBNnSXDeYVWLk",
+          "mega": "16hGxT4Q#mBNDnptXS-55d4rxh3lcKoO3NXGbOcxXo-yFHaa7v1w",
           "google": "1iU2p6L97kLMcBFE3L3qyVFPE5T0XDYGm",
-          "hash": "1c20ac062857fa18fd896323a2626262f6dfb88950205fb5109edc72a9e7842f"
+          "hash": "e38e8201f171735681a35da22522f3c3a43c9364f242232f46383bb3eb56f8b1"
         }
       ]
     },
@@ -35,13 +35,13 @@
       "desc": "Required patch to play the JP version of the game.",
       "requires": [],
       "conflicts": [],
-      "hash": "95edc614fd41fbcfbf127d6ff9d94347bdbca260b1aefa5abfa16fcaa9b6e9fe",
+      "hash": "7bfe455047f93a23be4dca8916b67077f370bb381769ac16d5878b0c56ad8d20",
       "files": [
         {
           "name": "Default_JP_Patch.zip",
-          "mega": "suh2GKBA#GBPsy0x0KBzIDIMQxTLFACEdvxRFzb4BMo7DgdZHkyI",
+          "mega": "huh3TD5R#QLcccWVIV_V4vg7alIq225RFrCOQwenKYgRb9ABk1FY",
           "google": "1H4SPlwqh5NdPJzajx3srWdzY3xczeW-n",
-          "hash": "95edc614fd41fbcfbf127d6ff9d94347bdbca260b1aefa5abfa16fcaa9b6e9fe"
+          "hash": "7bfe455047f93a23be4dca8916b67077f370bb381769ac16d5878b0c56ad8d20"
         }
       ]
     }
