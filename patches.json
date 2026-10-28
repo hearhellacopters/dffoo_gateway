@@ -23,19 +23,19 @@
     {
       "name": "Default_JP_Patch",
       "file": "Default_JP_Patch.zip",
-      "patch_version": "0.0.1",
+      "patch_version": "0.0.2",
       "game_version": "JP",
-      "min_server_version": "0.0.1",
+      "min_server_version": "0.0.2",
       "desc": "Required patch to play the JP version of the game.",
       "requires": [],
       "conflicts": [],
-      "hash": "e66f040447a507fd6f0cfb240c5d4f0418ca577dc381ea437c576238798c9410",
+      "hash": "b30e1c51bd00754aea64dca92a469fbe0b2c55c6a93d4a9686ea54b3688100bf",
       "files": [
         {
           "name": "Default_JP_Patch.zip",
-          "mega": "M6Qj1AxD#Z395B4R6hy91EzvTXMP79cM50F2jX8YGYkYeMu7CrYU",
-          "google": "1qwdZt2QenBKOWCqFR5r0A19KR5unBhFO",
-          "hash": "e66f040447a507fd6f0cfb240c5d4f0418ca577dc381ea437c576238798c9410"
+          "mega": "oiwRyYxB#CYjuA41veQzAyZIHyczrL4kmf6K3ghm1BXZOXFaaOIM",
+          "google": "1Wss3ON1IlN1DRWMYwtjI7dxJw1aICqtc",
+          "hash": "b30e1c51bd00754aea64dca92a469fbe0b2c55c6a93d4a9686ea54b3688100bf"
         }
       ]
     }
