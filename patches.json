@@ -10,13 +10,13 @@
       "desc": "Required patch to play the GL version of the game.",
       "requires": [],
       "conflicts": [],
-      "hash": "57834dba70121a3cf1d11cf66839b8ada10d42d02bc58f6e55a24f2bd72f7d71",
+      "hash": "7bfd3b01fffdbca4efbc6fa60c516470a7c362a3f48cb0049fc3275702251bbd",
       "files": [
         {
           "name": "Default_GL_Patch.zip",
-          "mega": "cm5gAb5Z#4Km4lR42IYZj8UjjOFSxmat5Ku-tWurTfOU_eri4K-A",
-          "google": "1-GUO41G0O_5YcydrcJfWqF5Z9P6Se2Mf",
-          "hash": "57834dba70121a3cf1d11cf66839b8ada10d42d02bc58f6e55a24f2bd72f7d71"
+          "mega": "M2hFHJgI#lLcrqCQJaG85BN4XGTBr_pHrUpzmra5lOeb_IraBUPA",
+          "google": "1A6kKJxm1-FT8WqnSWhap10ZSay_gS-Oi",
+          "hash": "7bfd3b01fffdbca4efbc6fa60c516470a7c362a3f48cb0049fc3275702251bbd"
         }
       ]
     },
