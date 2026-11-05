@@ -10,13 +10,19 @@
       "desc": "Required patch to play the GL version of the game.",
       "requires": [],
       "conflicts": [],
-      "hash": "851d63dc0440bdc7afa537e8044ab154792b9a03d3ee2f787deba5229a723662",
+      "hash": "f14fe0ea9ede6630e6d1b0c0550c63befe439941cdffc54c19a6de1a81889c4f",
       "files": [
         {
-          "name": "Default_GL_Patch.zip",
-          "mega": "kioBDCpS#_5IrxR-aGHUUe24z18up5iYCvab-jeSQIh4jggs8JBU",
-          "google": "1YBT8levtCOVWg-fhINNOpW-nBkUtZ6kK",
-          "hash": "851d63dc0440bdc7afa537e8044ab154792b9a03d3ee2f787deba5229a723662"
+          "name": "Default_GL_Patch.zip.001",
+          "mega": "xz4xSI4b#3-sF98uiqsRdjhv2aborQk82kAYLyhGAnZiFEuNF_ho",
+          "google": "1fKMNS9UEaioevBpJYKhZZOfTqL5ZT6Ct",
+          "hash": "fdbb83f4e11c127f6eb0b37545c89e167f01634f9c1f67c97578636f1ebaa6b5"
+        },
+        {
+          "name": "Default_GL_Patch.zip.002",
+          "mega": "RyYCnAaa#cXMRvnJ9adopcPN_wSOmlR5JbFrtKCEJAXgHVVYiOWI",
+          "google": "132r2ntyCcRG09QXGS4yLObSsUtLDqd7a",
+          "hash": "7dd23ee84259185a470aa7755328dbb8d88cf83184ebf9a7682b7f78a876ae0c"
         }
       ]
     },
