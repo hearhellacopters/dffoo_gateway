@@ -35,13 +35,13 @@
       "desc": "Required patch to play the JP version of the game.",
       "requires": [],
       "conflicts": [],
-      "hash": "b30e1c51bd00754aea64dca92a469fbe0b2c55c6a93d4a9686ea54b3688100bf",
+      "hash": "061875fba7d03b66c248d4bca58d464be3f31c495efdde559854d4ad2e0e0cef",
       "files": [
         {
           "name": "Default_JP_Patch.zip",
-          "mega": "oiwRyYxB#CYjuA41veQzAyZIHyczrL4kmf6K3ghm1BXZOXFaaOIM",
-          "google": "1Wss3ON1IlN1DRWMYwtjI7dxJw1aICqtc",
-          "hash": "b30e1c51bd00754aea64dca92a469fbe0b2c55c6a93d4a9686ea54b3688100bf"
+          "mega": "JuJ2yALZ#Lc_vTu68gh3M1MwA__uPDJeuNVlkcP_5RofXRkD_Ums",
+          "google": "1i82ON766yyYdHLnGkiktWshaTt1Ga990",
+          "hash": "061875fba7d03b66c248d4bca58d464be3f31c495efdde559854d4ad2e0e0cef"
         }
       ]
     }
