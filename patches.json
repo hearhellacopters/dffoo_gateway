@@ -4,25 +4,25 @@
     {
       "name": "Default_GL_Patch",
       "file": "Default_GL_Patch.zip",
-      "patch_version": "0.0.3",
+      "patch_version": "0.0.4",
       "game_version": "GL",
       "min_server_version": "0.0.2",
       "desc": "Required patch to play the GL version of the game.",
       "requires": [],
       "conflicts": [],
-      "hash": "2b220aaafefb44e971defe8e1149ad49a06bfd2c9086d2b6f313abc51fefa8e3",
+      "hash": "623d02c6c9a1986e96cbdf91946f5b171d6f927dbc8bcbcfd55f19764aa189be",
       "files": [
         {
           "name": "Default_GL_Patch.zip.001",
-          "mega": "suozEJiJ#E50ca105ZD_dlfplXGDpCVzLodSGPIRAxAlR1kBYpRo",
-          "google": "1cW1lMDH58i5AeoalGIMy-f3f46SGRcHO",
-          "hash": "313ceebba38879878722d70ef5d260f9a79fa20e626ddd3785abbc11982e6bca"
+          "mega": "E7hUjATL#5yuEOGC9oPzHrLFHyLNTEdM_LdqudQ69DqVjyxI4dJM",
+          "google": "10RK0UXGPiV7WU-PP0oSc0EedWDTVtGZu",
+          "hash": "f88ede02566ec14d6bef1555a652be0b2c1fa180487110000a3713838e35cc51"
         },
         {
           "name": "Default_GL_Patch.zip.002",
-          "mega": "wq5BRJzY#afLxMpGSDYctJkgQnvx3QNC-NGrhWEGuXlQR66mfLJ8",
-          "google": "1xVxQxlEsfA1yPbxMbD7zX5lxMzBPEtQb",
-          "hash": "d01c4462b5283b3dd75df3c03490a17b3ef9cb429ca10c326b03175f78ca9168"
+          "mega": "w6JBxZiQ#0GMy_ajdabiybIYz_fyLk5ta6Xn0cE335vOFEPuMS_g",
+          "google": "1rfhBskMEQlAoq5ICZ8g-AGnIDUilZB8E",
+          "hash": "7de879763fd6994eb6efc4de3f26cf620863648f4f4b38004e95fb875c74a0e5"
         }
       ]
     },
