@@ -1,0 +1,6 @@
+# GitHub Pages (Jekyll) build settings.
+# clients/ holds the modded APK / IPA files (~290 MB). They are downloaded from
+# raw.githubusercontent.com and github.com (AltSource.json, README.MD), never from
+# the Pages site, so they are left out of the deploy.
+exclude:
+  - clients
