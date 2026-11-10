@@ -4,44 +4,44 @@
     {
       "name": "Default_GL_Patch",
       "file": "Default_GL_Patch.zip",
-      "patch_version": "0.0.2",
+      "patch_version": "0.0.4",
       "game_version": "GL",
-      "min_server_version": "0.0.1",
+      "min_server_version": "0.0.2",
       "desc": "Required patch to play the GL version of the game.",
       "requires": [],
       "conflicts": [],
-      "hash": "1f721cf54c4b2670be44d6dc2ea6426642e3b4470e74e9e2a39efa3d2bf0f24d",
+      "hash": "623d02c6c9a1986e96cbdf91946f5b171d6f927dbc8bcbcfd55f19764aa189be",
       "files": [
         {
           "name": "Default_GL_Patch.zip.001",
-          "mega": "prpRVIoK#YU7jdImd75DatVA1gV-DeS8ZeINesPt0rCqpRJQyugI",
-          "google": "1cfmSUpmemmOLYxEaM_UHLHDmCNnMesML",
-          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "mega": "E7hUjATL#5yuEOGC9oPzHrLFHyLNTEdM_LdqudQ69DqVjyxI4dJM",
+          "google": "10RK0UXGPiV7WU-PP0oSc0EedWDTVtGZu",
+          "hash": "f88ede02566ec14d6bef1555a652be0b2c1fa180487110000a3713838e35cc51"
         },
         {
           "name": "Default_GL_Patch.zip.002",
-          "mega": "w3ohwDrQ#qMbZVatUHka5v_SLfePbJ6Wlw7w61-J8f_expyr5wIU",
-          "google": "1iU2p6L97kLMcBFE3L3qyVFPE5T0XDYGm",
-          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          "mega": "w6JBxZiQ#0GMy_ajdabiybIYz_fyLk5ta6Xn0cE335vOFEPuMS_g",
+          "google": "1rfhBskMEQlAoq5ICZ8g-AGnIDUilZB8E",
+          "hash": "7de879763fd6994eb6efc4de3f26cf620863648f4f4b38004e95fb875c74a0e5"
         }
       ]
     },
     {
       "name": "Default_JP_Patch",
       "file": "Default_JP_Patch.zip",
-      "patch_version": "0.0.1",
+      "patch_version": "0.0.2",
       "game_version": "JP",
-      "min_server_version": "0.0.1",
+      "min_server_version": "0.0.2",
       "desc": "Required patch to play the JP version of the game.",
       "requires": [],
       "conflicts": [],
-      "hash": "e1afb3457540038bb2175999c8aca4492fff890368cea7f600a6da1190234b9f",
+      "hash": "061875fba7d03b66c248d4bca58d464be3f31c495efdde559854d4ad2e0e0cef",
       "files": [
         {
           "name": "Default_JP_Patch.zip",
-          "mega": "4ywUxRzK#QJPw-rMh9ZE7RAtXjCodKxjsXJC84kkv1HaVHQ2FjIs",
-          "google": "1H4SPlwqh5NdPJzajx3srWdzY3xczeW-n",
-          "hash": "e1afb3457540038bb2175999c8aca4492fff890368cea7f600a6da1190234b9f"
+          "mega": "JuJ2yALZ#Lc_vTu68gh3M1MwA__uPDJeuNVlkcP_5RofXRkD_Ums",
+          "google": "1i82ON766yyYdHLnGkiktWshaTt1Ga990",
+          "hash": "061875fba7d03b66c248d4bca58d464be3f31c495efdde559854d4ad2e0e0cef"
         }
       ]
     }
